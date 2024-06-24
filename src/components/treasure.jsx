@@ -11,51 +11,43 @@ function Treasure() {
 
       <div className="col1">
         <div className="row1 brown">
-        <img src={insta360} style={{
-            height:"250px",
-            width:"150px",
-                  objectFit:"cover",
-                  objectPosition:"5px 102px",       
-          }} alt="Insta360" />
+        <img className="insta360" src={insta360} alt="Insta360" />
         </div>
-        <div className="row2">hii</div>
+        <div className="row2"></div>
       </div>
-      <div className="col2"></div>
-      <div className="col3">
-      <div className="row1 brown">hii</div>
-      <div className="row2">hii</div>
+      <div className="col2">
+          <h1><b>Our <br/> Latest</b><br/>Products<br/>
+          <button>
+            View All
+          </button></h1>
       </div>
-      <div className="col4">
-      <div className="row2">
       
-      <img src={silvercycle} style={{
-            height:'150px',
-            // width:'100%',
-                  objectFit:'cover',
-                  objectPosition:"-170px 80px",       
+      <div className="col3">
+      <div className="row1 brown">
+      <img src={chair} className="imgrotate"  style={{
+            height:'250px',
+            width:'100%',
+                  // objectFit:'cover',
+                  // objectPosition:"-400px -20px",       
           }} alt="Insta360" />
       </div>
-
-      <div className="row1 brown"><img src={insta360} style={{
-            height:"250px",
-            width:"150px",
-            marginLeft:'70px',
-                  objectFit:"cover",
-                  objectPosition:"5px 100px",       
-          }} alt="Insta360" /></div>
+      <div className="row2">
+      <img src={silvercycle} className="cycle imgrotate"  alt="Insta360" />
+      </div>
       </div>
 
-{/* <div class="item">
-        <div className="brown">
-          <img src={insta360} style={{
-            height:"200px",
-            width:"200px",
-                  objectFit:"cover",
-                  objectPosition:"8000% 10%",       
-          }} alt="Insta360" />
-        </div>
-        <div>2</div>
-      </div> */}
+      <div className="col4">
+
+      <div className="row2">
+      <img src={silvercycle} className="cycle" alt="Insta360" />
+      </div>
+
+      <div className="row1 brown">
+        <img className="insta360" src={insta360}  alt="Insta360" />
+      </div>
+      
+      </div>
+      
     </div>
   );
 }

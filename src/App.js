@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Tresure from './components/treasure';
 import Sidebar from './components/sidebar';
-import Cards from './components/cards';
+// import Cards from './components/cards';
 import Lists from './components/list';
 
 
@@ -15,7 +15,7 @@ function App() {
       <Tresure />
       <Lists />
       <Sidebar />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 }

@@ -11,30 +11,14 @@ function list() {
   return (
     <div className='list'>
 
-      <div><img src={logo1} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo3} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo4} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo2} alt='kuchh bhi' style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo6} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo5} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo3} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
-      <div><img src={logo4} alt='kuchh bhi'style={{
-        backgroundColor:'lightgray',
-      }}/></div>
+      <div><img src={logo1} alt='kuchh bhi'/></div>
+      <div><img src={logo3} alt='kuchh bhi'/></div>
+      <div><img src={logo4} alt='kuchh bhi'/></div>
+      <div><img src={logo2} alt='kuchh bhi' /></div>
+      <div><img src={logo6} alt='kuchh bhi'/></div>
+      <div><img src={logo5} alt='kuchh bhi'/></div>
+      <div><img src={logo3} alt='kuchh bhi'/></div>
+      <div><img src={logo4} alt='kuchh bhi'/></div>
 
     </div>
   )

@@ -3,30 +3,33 @@
   background-color: white;
 }
  /* navbar :start  */
-.navbar-container{
-  width: 80%;
-  margin-left: 14%;
-  background-color: white;
+ .topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-left: 15%;
 }
-.navbar-list{
-  display: inline-flex;
-  width: 100%;
-  list-style: none;
-  flex-flow: row;
-}
-.navbar-item{
-  width: 8%;
-  font-size: 14px;
-  text-align: center; 
-  /* border: 1px blue dotted; */
-}
-.navbar-item a{
-  text-decoration: none;
-  font-style: bold; 
-  font-weight: 600;
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.navbar-icon{
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
   display: none;
 }
  /* Nav bar end */
@@ -39,24 +42,36 @@
   display: grid;
   height: 400px;
   width: 100%;
-  border: 1px blue solid;
-  grid-template-columns: 22% 29% 26% 23%;
+  /* border: 1px blue solid; */
+  grid-template-columns: 25% 25% 25% 25%;
  }
 .col1{
-border: 1px blue solid;
+/* border: 1px blue solid; */
 
 }
 .col2{
-border: 1px blue solid;
+/* border: 1px blue solid; */
+padding-top: 90px;
+padding-left: 40px;
+font-size: 25px;
+line-height: 45px;
 }
+.col2 button{
+  width: 150px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: rgb(255, 204, 204);
+  border: none;
+}
+
 .col3{
-border: 1px blue solid;
+/* border: 1px blue solid; */
 }
 .col4{
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
 }
 .brown{
-  background-color: burlywood;
+  background-color: rgb(252, 241, 225);
 }
 .row1{
 height: 250px;
@@ -65,6 +80,30 @@ width: 100%;
 .row2{
   height: 150px;
 width: 100%;
+overflow-y: hidden;
+}
+
+.imgrotate{
+  transform: rotateY(180deg);
+}
+
+
+img{
+  mix-blend-mode: multiply;
+}
+
+.cycle{
+  height:200%;
+  width:100%;
+  object-fit:cover;
+  object-position:140% 20px;     
+}
+.insta360{
+  height:100%;
+  width:45%;
+  margin-left:25%;
+  object-fit:cover;
+  object-position:5px 100px;
 }
  /* treasure end */
 
@@ -74,25 +113,28 @@ width: 100%;
   display: grid;
   /* grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%; */
    grid-template-areas: ' div div div div div div div div';
-  gap: 10px;
+  /* gap: 2%; */
   background-color: #fdfdfd;
+  height:96px;
   padding: 1%;
-  height: 100px;
-  border: 1px blue solid;
+  margin-top: 1%;
+  /* border: 1px blue solid; */
   width: auto;
 }
-.list > div{
-  width: 100px;
-  height: 75px;
-  /* margin: 10%; */
-  opacity: 0.8;
-  /* background-color: beige; */
+.list  div{
+  width: 80%;
+  height: 80%;
+  background-color: lightgrey;
   /* border: 1px black solid; */
 }
 
 .list div img{
-  padding: 25% 35%;
-  height: 45px;
+  padding: 20% 25%;
+  height: 50%;
+  width: 50%;
+  border-radius: 32%;
+  z-index: 1;
+  
 }
 
  /* list end */
@@ -102,9 +144,9 @@ width: 100%;
  /* sidebar  */
 .grid-container-order{
 
-  width: 64%;
+  width: 74%;
   height: auto;
-  margin: 2% 18%;
+  margin: 2% 13%;
   display: grid;
   grid-template-areas: 'sidebar cards';
   grid-template-columns: 20% 80%;
@@ -116,10 +158,84 @@ width: 100%;
 
 .sidebar{
   border: 1px black solid;
+  background-color: #000000;
+  color: #ffffff;
   height: 450px; 
-  
-
+  font-size: 12px;
 }
+.sidebar ul{
+  padding:10% 0 0 10%;
+}
+
+.sidebar ul button{
+  float: right;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.sidebar ul li{
+  list-style: none;
+  padding-left:6%;
+  margin-top: 11px ;
+  
+}
+.sidebar ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-option {
+  display: none;
+}
+
+.color-option + label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-option:checked + label {
+  border: 2px solid black; /* Highlight selected color */
+}
+
+.color-red + label {
+  background-color: red;
+}
+
+.color-blue + label {
+  background-color: blue;
+}
+
+.color-green + label {
+  background-color: green;
+}
+
+.color-yellow + label {
+  background-color: yellow;
+}
+
+.color-olive + label {
+  background-color: olive;
+}
+.color-violet + label {
+  background-color: violet;
+}
+.color-brown + label {
+  background-color: rgb(207, 202, 162);
+}
+
+
+
 
 .cards{
   /* border: 1px black solid; */
@@ -146,12 +262,124 @@ width: 100%;
   width: 100%;
   height: 150px;
 }
+.card button
+{
+  width: 100px;
+  height: 35px;
+  border-radius: 22px;
+  margin-left: 8px;
+}
 
+.blue{
+  background-color: rgb(81, 171, 167);
+  color: white;
+  border: none;
+}
+
+.borderBlue{
+  border:2px solid rgb(81, 171, 167);
+  /* float: right; */
+}
  /* sidebar end  */
  /* cards */
  /* cards end */
 
 
  /* Responsive */
+ 
+ @media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 
+  .col2{
+    /* border: 1px blue solid; */
+    padding-top: 90px;
+    padding-left: 7%;
+    font-size: 11px;
+    line-height: 25px;
+    }
+    .col2 button{
+      width: 80%;
+      height: 25px;
+      border-radius: 22px;
+      background-color: rgb(255, 204, 204);
+      border: none;
+    }
+  
+  .cycle{
+    height:200%;
+    width:100%;
+    object-fit:cover;
+    object-position:80% 20px;     
+  }
+  .insta360{
+    height:100%;
+    width:100%;
+    /* margin-left:25%; */
+    object-fit:cover;
+    object-position:-40px 140px;
+  }
+
+  .list div img{
+    padding: 35% 25%;
+    height: 50%;
+    width: 50%;
+    border-radius: 32%;
+    z-index: 1;
+    
+  }
+  .grid-container-order{
+
+    width: 70%;
+    height: auto;
+    margin: 1% 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    /* padding: 1%; */
+    /* border: 1px blue solid; */
+  }
+  .cards{
+    /* border: 1px black solid; */
+    height: auto;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+  }
+
+  .sidebar{
+    border: 1px black solid;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%; 
+    font-size: 12px;
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  
+
+}
+ @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
  /* end of responsive */
