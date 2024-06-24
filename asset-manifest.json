@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/eCommerceFrontPage/static/css/main.97abea0e.css",
+    "main.js": "/eCommerceFrontPage/static/js/main.f95e6bd7.js",
+    "static/js/453.4297e0f3.chunk.js": "/eCommerceFrontPage/static/js/453.4297e0f3.chunk.js",
+    "static/media/cards.jpeg": "/eCommerceFrontPage/static/media/cards.f3b0df59112a98c99749.jpeg",
+    "static/media/cycle.jpeg": "/eCommerceFrontPage/static/media/cycle.cfb2b0ccf6f79b29d476.jpeg",
+    "static/media/insta360-x3.jpeg": "/eCommerceFrontPage/static/media/insta360-x3.5f068148061ae37f828a.jpeg",
+    "static/media/Magento.jpg": "/eCommerceFrontPage/static/media/Magento.56f83c222990961ba224.jpg",
+    "static/media/shopify.png": "/eCommerceFrontPage/static/media/shopify.3cbd37575f6fd7cfb7f6.png",
+    "static/media/woo.png": "/eCommerceFrontPage/static/media/woo.143b0b89597bc6f89c42.png",
+    "index.html": "/eCommerceFrontPage/index.html",
+    "main.97abea0e.css.map": "/eCommerceFrontPage/static/css/main.97abea0e.css.map",
+    "main.f95e6bd7.js.map": "/eCommerceFrontPage/static/js/main.f95e6bd7.js.map",
+    "453.4297e0f3.chunk.js.map": "/eCommerceFrontPage/static/js/453.4297e0f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97abea0e.css",
+    "static/js/main.f95e6bd7.js"
+  ]
+}
