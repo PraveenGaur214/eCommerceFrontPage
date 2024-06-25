@@ -1,6 +1,6 @@
 // import React from "react";
 import React, { useState } from "react";
-import { Slider, Box } from '@mui/material';
+import { Slider, Box, InputLabel, MenuItem, FormControl, Select} from '@mui/material';
 import Cardimg from '../assets/cards.jpeg';
 
 function valuetext(value) {
@@ -11,13 +11,38 @@ function Sidebar() {
 
   
   const [value, setValue] = React.useState([20, 37]);
+  const [age, setAge] = React.useState('');
+
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  
+  const handleChange1 = (event) => {
+    setAge(event.target.value);
+  };
 
   return (
+    <div>
+    
+    <FormControl variant="standard" sx={{ m: 1, minWidth: 120, display:"grid",  float: "right", marginRight:"14%" }}>
+        <InputLabel id="demo-simple-select-standard-label">Sort By</InputLabel>
+        <Select
+          labelId="demo-simple-select-standard-label"
+          id="demo-simple-select-standard"
+          value={age}
+          onChange={handleChange}
+          label="Age"
+        >
+          <MenuItem value="">
+            <em>None</em>
+          </MenuItem>
+          <MenuItem value={10}>Item1</MenuItem>
+          <MenuItem value={20}>Item</MenuItem>
+          <MenuItem value={30}>Item</MenuItem>
+        </Select>
+      </FormControl>
+      
+    
     <div className="grid-container-order">
       <div className="sidebar">
         
@@ -135,7 +160,7 @@ function Sidebar() {
         </div>
 
       </div>
-
+      </div>
     </div>
   );
 }
