@@ -42,15 +42,15 @@
   display: grid;
   height: 400px;
   width: 100%;
-  /* border: 1px blue solid; */
+  
   grid-template-columns: 25% 25% 25% 25%;
  }
 .col1{
-/* border: 1px blue solid; */
+
 
 }
 .col2{
-/* border: 1px blue solid; */
+
 padding-top: 90px;
 padding-left: 40px;
 font-size: 25px;
@@ -65,10 +65,10 @@ line-height: 45px;
 }
 
 .col3{
-/* border: 1px blue solid; */
+
 }
 .col4{
-  /* border: 1px blue solid; */
+  
 }
 .brown{
   background-color: rgb(252, 241, 225);
@@ -111,21 +111,19 @@ img{
  /* list */
 .list{
   display: grid;
-  /* grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%; */
-   grid-template-areas: ' div div div div div div div div';
-  /* gap: 2%; */
+  grid-template-areas: ' div div div div div div div div';
   background-color: #fdfdfd;
   height:96px;
   padding: 1%;
   margin-top: 1%;
-  /* border: 1px blue solid; */
+ 
   width: auto;
 }
 .list  div{
   width: 80%;
   height: 80%;
   background-color: lightgrey;
-  /* border: 1px black solid; */
+ 
 }
 
 .list div img{
@@ -153,7 +151,7 @@ img{
   gap: 10px;
   background-color: #fdfdfd;
   padding: 1%;
-  /* border: 1px blue solid; */
+  
 }
 
 
@@ -241,7 +239,7 @@ img{
 
 
 .cards{
-  /* border: 1px black solid; */
+ 
   height: auto;
   width: 100%;
   display: grid;
@@ -251,14 +249,13 @@ img{
 
 .card{
   width: 100%;
-  /* margin: 0 3%; */
+
   background-color: rgb(223, 223, 223);
   border: 1px green solid; 
   height: 300px;
   line-height: 5px;
   margin-bottom: 25px;
-  /* margin-left: 5%;
-  margin-right: 5%; */
+ 
 }
 
 .card img{
@@ -281,11 +278,10 @@ img{
 
 .borderBlue{
   border:2px solid rgb(81, 171, 167);
-  /* float: right; */
+ 
 }
  /* sidebar end  */
- /* cards */
- /* cards end */
+ 
 
 
  /* Responsive */
@@ -298,7 +294,7 @@ img{
   }
 
   .col2{
-    /* border: 1px blue solid; */
+  
     padding-top: 90px;
     padding-left: 7%;
     font-size: 11px;
@@ -321,7 +317,7 @@ img{
   .insta360{
     height:100%;
     width:100%;
-    /* margin-left:25%; */
+   
     object-fit:cover;
     object-position:-40px 140px;
   }
@@ -342,17 +338,16 @@ img{
     display: flex;
     flex-direction: column;
     background-color: #fdfdfd;
-    /* padding: 1%; */
-    /* border: 1px blue solid; */
+   
   }
   .cards{
-    /* border: 1px black solid; */
+    
     height: auto;
     margin: auto;
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+   
   }
 
   .sidebar{
@@ -362,7 +357,7 @@ img{
     height: 100%; 
     font-size: 12px;
     width: 100%;
-    /* margin: auto; */
+    
     display: flex;
     flex-direction: row;
     overflow: hidden;
