@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Tresure from './components/treasure';
 import Sidebar from './components/sidebar';
-
 import Lists from './components/list';
 
 function App() {
